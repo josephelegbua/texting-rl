@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>Momentum Texts</title>
+    <!-- <link rel="stylesheet" id="understrap-styles-css" href="css/theme.min.css" type="text/css" media="all"> -->
+    <link rel="stylesheet" id="lsp-css" href="css/lsp-style.css" type="text/css" media="all">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Get The Guy">
+    <script type="text/javascript">
+        var cartLink = '<?php echo $cart_link; ?>';
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <?php include_once("../common/includes/vwo-tracking.php"); ?>
+
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com -->
+    <script type="text/javascript" src="https://a.omappapi.com/app/js/api.min.js" data-account="4832" data-user="9781"
+            async></script>
+    <!-- / https://optinmonster.com -->
+
+    <script type="text/javascript">
+        var cartLink = '<?php echo $cart_link; ?>';
+    </script>
+</head>
+<body class="">
+<?php include_once("../common/includes/ga-tracking.php"); ?>
+
+<!-- ******************* The Navbar Area ******************* -->
+<div id="wrapper-navbar" itemscope="" itemtype="http://schema.org/WebSite">
+
+    <a class="skip-link sr-only sr-only-focusable" href="#content">Skip to content</a>
+
+    <!-- <nav class="navbar navbar-expand-md navbar-light navbar--transparent">
+        <div class="container">
+            <div class="navbar__wrap">
+                <img src="img/logo-desktop.svg" class="d-none d-md-block" alt="Get The Guy">
+                <img class="d-md-none" src="img/logo-mobile.svg" alt="Get The Guy">
+                <span class="navbar__tag">Love. Life.</span>
+            </div>
+        </div>.container
+    </nav>-->
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__wrapper">
+                <div class="navbar__wrap">
+                    <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2022/11/mh-logo.svg" class="d-none d-md-block" alt="Get The Guy">
+                    <!-- <img class="d-md-none" src="img/mh-logo.svg" alt="Get The Guy"> -->
+                    <!-- <span class="navbar__tag">Love. Life.</span> -->
+                </div>
+                <div class="countdown">
+                    <p class="countdown__heading"> Your Black Friday Audio Coaching Bonus expires in:</p>
+                    <div class="countdown__wrapper">
+                        <div class="days__wrapper">
+                            <p class="days">20</p>
+                            <p class="days__label">Days</p>
+                        </div>
+                        <div class="hours__wrapper">
+                            <p class="hours">15</p>
+                            <p class="hours__label">Hrs</p>
+                        </div>
+                        <div class="minutes__wrapper">
+                            <p class="minutes">20</p>
+                            <p class="minutes__label">Min</p>
+                        </div>
+                        <div class="seconds__wrapper">
+                            <p class="seconds">40</p>
+                            <p class="seconds__label">Sec</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="<?php echo $cart_link; ?>" class="btn-rl-nav">Get My Download</a>
+            </div>
+        </div>
+    </nav>
+
+</div><!-- #wrapper-navbar end -->
+
+
+<div id="lsp">
+    <section id="lsp-top">
+        <div id="lsp-bg" class="clearfix">
+            <div class="cc">
+                <img src="https://www.howtogettheguy.com/thescripts/vsl/img/logo-desktop.svg" class="d-none d-md-block"
+                     alt="Get The Guy">
+                <img class="d-md-none" src="https://www.howtogettheguy.com/thescripts/vsl/img/logo-mobile.svg"
+                     alt="Get The Guy">
+                <h1>Are You Sick and Tired of Texting That Goes <span>Nowhere?</span></h1>
+                <h2>These Text Messages Get You Off Your Phone and Into a REAL Relationship</h2>
+            </div>
+        </div>
+
+        <div id="lsp-form__top">
+            <div class="cc">
+
+                <div class="hero__video">
+                    <div class="video-vimeo">
+                        <a class="video-vimeo__link" href="https://player.vimeo.com/video/449687792"
+                           data-url="https://player.vimeo.com/video/449687792">
+                            <picture>
+                                <img class="video__media" src="img/Chat.jpg" alt="vimeo video" loading="lazy">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="lsp-video lsp-hide">
+                        <button class="btn lsp-video">WATCH VIDEO</button>
+                    </div>
+                </div>
+
+                <div id="lsp-chat">
+                    <div class="lsp-content">
+                        <?php if (!empty($token)) { ?>
+                            <form accept-charset="UTF-8"
+                                  action="<?php echo $cart_link; ?>"
+                                  class="form-subscribe" method="POST">
+                                <div class="infusion-submit">
+                                    <input type="submit" value="GET MY DOWNLOAD" class="send btn lsp-red"/>
+                                </div>
+                                <p class="upsell-text">Hurry! Your FREE Black Friday Audio Coaching Bonus Expires Wednesday</p>
+                            </form>
+                        <?php } else { ?>
+                            <form accept-charset="UTF-8"
+                                  action="https://members.howtogettheguy.com/subscribe/3067e9f8dfaf37d7e9b3372cb15ac5bf/"
+                                  data-defaultaction="https://members.howtogettheguy.com/subscribe/3067e9f8dfaf37d7e9b3372cb15ac5bf/"
+                                  data-hotmailaction="https://members.howtogettheguy.com/subscribe/3067e9f8dfaf37d7e9b3372cb15ac5bf/"
+                                  class="infusion-form form_check_hotmail form_check_optional_email" method="POST" id="LaunchSales-form">
+
+                                <?php if (!empty($contact_information)
+                                    && isset($contact_information['email'])
+                                ) { ?>
+                                    <input type="hidden" name="contact_fields[email]"
+                                           value="<?php echo $contact_information['email']; ?>"/>
+                                <?php } else { ?>
+                                    <div class="lsp-inp-holder">
+                                        <div class="infusion-field">
+                                            <label class="screen-reader-text" for="inf_field_Email">Email
+                                                Address</label>
+                                            <input class="field" id="inf_field_Email" name="contact_fields[email]"
+                                                   type="text"
+                                                   placeholder="Email Address (Optional)">
+                                            <div class="status required-field"></div>
+                                            <div class="error-note"></div>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                                <?php echo get_form_hidden_fields(); ?>
+                                <div class="infusion-submit">
+                                    <input type="submit" value="GET MY DOWNLOAD" class="send btn lsp-red"/>
+                                </div>
+                                <p class="upsell-text">Hurry! Your FREE Black Friday Audio Coaching Bonus Expires Wednesday</p>
+                            </form>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="lsp-messages">
+        <div class="cc">
+            <div class="lsp-background">
+                <div class="lsp-content clearfix">
+                    <h3><em>Send irresistible messages • Escape the dead-end texting trap • Turn ‘interactions’ into a
+                            real relationship</em></h3>
+                    <p><span>Wish you could meet someone amazing and your relationship would just... take off?</span>
+                        Conversations would happen organically, you’d flow from flirting to first date...from first date
+                        to second...then third...You’d fall for each other, get exclusive, and end up happy and in love?
+                    </p>
+                    <p><span>Instead, you get stuck in endless texting traps that lead nowhere.</span> Dating feels like
+                        so. much. work. And just when you think a ‘connection’ has gotten off the ground, they ghost you
+                        and you’re back to square one. It’s enough to make you feel burned out, demoralized, and just
+                        plain hopeless.</p>
+                    <div>
+
+                        <div id="lsp-mh-img">
+                            <div class="lsp-mask"></div>
+                            <img class="lsp-matthew" src="img/Matt.png" alt="Matthew Hussey">
+                            <p>
+                                <span>I understand how you feel.</span> And I can help. <strong>I’m Matthew
+                                    Hussey,</strong> and as the leading dating authority for women, I’ve helped millions
+                                get the relationship they deserve with practical proven advice. And I’ll do the same for
+                                you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="lsp-momentum">
+        <div class="cc">
+            <div class="arrow"><img src="img/DownArrow.png" alt="down arrow"></div>
+            <p>INTRODUCING...</p>
+            <h3 class="color-red">The Momentum Texts</h3>
+            <h4 class="color-red"><em>67 Counter-Intuitive Texts That Lead to REAL Relationships (and the Surprising
+                    Psychology Behind Why They Work)</em></h4>
+            <ul>
+                <li><span><strong>67 customizable text messages</strong> you can use in the delicate early dating stages so you can <strong><em>stop having fruitless ‘interactions,’ get off your phone and into a <span
+                                        style="text-decoration:underline">real</span> relationship.</em></strong></span>
+                </li>
+                <li><span><strong>Bite-sized principles of attraction psychology</strong> explain each message. <em>(You’ll always know <span
+                                    style="text-decoration:underline">why</span> they work, so you can tailor them to your voice, making each word natural and authentic to you.)</em></span>
+                </li>
+                <li><span><strong>Escape the dead-end texting trap:</strong> These messages quickly get you to an in-person date...and each date after that.</span>
+                </li>
+                <li>
+                    <span>My Exclusive ConTEXTualize Scale <strong>rates each message by your relationship stage</strong> so you’ll always know if it’s appropriate to send that text (no more accidental "level-jumping").</span>
+                </li>
+                <li>
+                    <span>Each message is designed to <strong><em>create momentum</em></strong> with a new connection, <strong><em>build momentum</em></strong> in an existing relationship, or <strong><em>regain momentum</em></strong> if it goes cold.</span>
+                </li>
+            </ul>
+            <div id="blue-bbl">
+                <h3>It's So Easy to Use:</h3>
+                <ol>
+                    <li><span>Scroll Right to the Text You Need at That Moment</span></li>
+                    <li><span>Customize the Text and Send it</span></li>
+                    <li><span>Get a Reply That Moves Your Relationship Forward</span></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="lsp-bottom">
+        <div class="urgency-market-msg">
+            <span class="yellow-highlight">Limited-time launch bonus:</span>
+            <p>Your 4 "Mindset Reset" Audio Coaching Sessions</p>
+            <span class="countdown-timer" id="timer"></span>
+            <p>Feeling anxious, insecure, or lonely? <b>Tempted to send a text that you probably shouldn’t?</b></p>
+            <p>Claim your <i>Momentum Texts</i> now and I’ll give you <b>4 rapid audio coaching sessions</b> to help shift your perspective so the next move you make is from a place of confidence and power...</p>
+            <ul class="bonus-items">
+                <li><p class="bonus-item-1"><span>#1:</span> “I Sent the Wrong Thing…”</p></li>
+                <li><p class="bonus-item-2"><span>#2:</span> Waiting for a Text Back</p></li>
+                <li><p class="bonus-item-3"><span>#3:</span> Going Back to the Wrong Person</p></li>
+                <li><p class="bonus-item-4"><span>#4:</span> Overcome Insecurity & Be Confident</p></li>
+            </ul>
+        </div>
+        <h3>Everyone Deserves Momentum</h3>
+        <h4>That's why I made your guide</h4>
+        <h5><em>just $7 today</em></h5>
+        <?php if (!empty($token)) { ?>
+            <form accept-charset="UTF-8"
+                  action="<?php echo $cart_link; ?>"
+                  class="form-subscribe" method="POST">
+                <div class="infusion-submit">
+                    <input type="submit" value="GET MY DOWNLOAD" class="send btn lsp-red"/>
+                </div>
+            </form>
+        <?php } else { ?>
+            <form accept-charset="UTF-8"
+                  action="https://members.howtogettheguy.com/subscribe/3067e9f8dfaf37d7e9b3372cb15ac5bf/"
+                  data-defaultaction="https://members.howtogettheguy.com/subscribe/3067e9f8dfaf37d7e9b3372cb15ac5bf/"
+                  data-hotmailaction="https://members.howtogettheguy.com/subscribe/3067e9f8dfaf37d7e9b3372cb15ac5bf/"
+                  class="infusion-form form_check_hotmail form_check_optional_email" method="POST" id="LaunchSales-form">
+                <div class="lsp-inp-holder">
+                    <?php if (!empty($contact_information)
+                        && isset($contact_information['email'])
+                    ) { ?>
+                        <input type="hidden" name="contact_fields[email]"
+                               value="<?php echo $contact_information['email']; ?>"/>
+                    <?php } else { ?>
+                        <div class="infusion-field">
+                            <label class="screen-reader-text" for="inf_field_Email">Email Address</label>
+                            <input class="field" id="inf_field_Email" name="contact_fields[email]" type="text"
+                                   placeholder="Email Address (Optional)">
+                            <div class="status required-field"></div>
+                            <div class="error-note"></div>
+                        </div>
+                    <?php } ?>
+                    <?php echo get_form_hidden_fields(); ?>
+                    <div class="infusion-submit">
+                        <input type="submit" value="GET MY DOWNLOAD" class="send btn lsp-red"/>
+                    </div>
+                </div>
+            </form>
+        <?php } ?>
+        <div id="lsp-security">
+            <p>
+                You are protected by my<br>
+                Risk-Free Satisfaction Guarantee:<br>
+                60 Full Days • 100% Refund • No Questions Asked
+            </p>
+            <img src="https://www.howtogettheguy.com/thescripts/images/guarantee_pic.jpg" alt="security badges">
+        </div>
+
+    </section>
+    <div class="ti-value-props">
+        <section class="partner">
+
+            <div class="ti-value-award">
+                <div class="partner__item">
+                    <picture>
+                        <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2020/01/NYT-logo.png" alt=""
+                             class="partner__img" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="ti-value-award">
+                <div class="partner__item">
+                    <picture>
+                        <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2019/12/today-logo.svg" alt=""
+                             class="partner__img" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="ti-value-award">
+                <div class="partner__item">
+                    <picture>
+                        <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2019/12/cosmopolitan-logo.svg"
+                             alt="" class="partner__img" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="ti-value-award">
+                <div class="partner__item">
+                    <picture>
+                        <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2019/12/iheartradio-logo.svg"
+                             alt="" class="partner__img" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="ti-value-award">
+                <div class="partner__item">
+                    <picture>
+                        <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2019/12/good-morning-america-logo.svg"
+                             alt="" class="partner__img" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="ti-value-award">
+                <div class="partner__item">
+                    <picture>
+                        <img src="https://www.howtogettheguy.com/site/wp-content/uploads/2020/01/rachaelray-logo.png"
+                             alt="" class="partner__img" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div id="copyrights">
+        <!--<p>&nbsp;</p>
+        <p>&nbsp;</p>-->
+        Copyright &copy; <?php echo date('Y'); ?> 320 Media LLC - All Rights Reserved • <a
+                href="https://www.howtogettheguy.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a> • <a
+                href="https://www.howtogettheguy.com/terms-and-conditions/" title="Terms">Terms</a> • <a
+                href="https://www.howtogettheguy.com/disclaimer/" title="disclaimer">Disclaimer</a>
+    </div>
+</div>
+<!-- <script src="../js/jquery.min.js"></script> -->
+<!-- <script src="../js/custom.js"></script>-->
+<script src="js/lsp-script.js" async></script>
+<script src="js/timer.js" async></script>
+<script>
+    const countdown = document.querySelectorAll('.countdown');
+    const retreatDate = new Date("November 22, 2022 3:00:00 EDT").getTime();
+
+    const timer = () => {
+        const now = new Date().getTime();
+        let diff = retreatDate - now;
+
+        if(diff < 0) {
+            countdown.remove();
+        }
+
+        let days = Math.floor(diff / (1000*60*60*24));
+        let hours = Math.floor(diff % (1000*60*60*24) / (1000*60*60));
+        let minutes = Math.floor(diff % (1000*60*60) / (1000*60));
+        let seconds = Math.floor(diff % (1000*60) / 1000);
+
+        days <= 9 ? days = `0${days}` : days;
+        hours <= 9 ? hours = `0${hours}` : hours;
+        minutes <= 9 ? minutes = `0${minutes}` : minutes;
+        seconds <= 9 ? seconds = `0${seconds}` : seconds;
+
+        document.querySelectorAll('.days').forEach((day, index) => {
+            day.textContent = days;
+        });
+        document.querySelectorAll('.hours').forEach((hour, index) => {
+            hour.textContent = hours;
+        });
+        document.querySelectorAll('.minutes').forEach((minute, index) => {
+            minute.textContent = minutes;
+        });
+        document.querySelectorAll('.seconds').forEach((second, index) => {
+            second.textContent = seconds;
+        });
+
+    }
+
+    timer();
+    setInterval(timer, 1000);
+</script>
+<?php include_once("../common/includes/mp-tracking.php"); ?>
+</body>
+</html>
