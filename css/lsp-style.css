@@ -708,7 +708,7 @@ div.lsp-video {
 }
 
 #lsp #lsp-momentum #blue-bbl {
-  background-color: #4f94cf;
+  background-color: #3c8bf5;
   border-radius: 25px 25px 25px 25px;
   position: relative;
   width: 90%;
@@ -736,8 +736,8 @@ div.lsp-video {
 }
 
 #lsp #lsp-momentum #blue-bbl h3 {
-  color: #f8f29a;
-  font-weight: 300;
+  color: #fff;
+  font-weight: 600;
   font-size: 2em;
   text-align: center;
 }
@@ -795,7 +795,7 @@ div.lsp-video {
 
 .urgency-market-msg .yellow-highlight {
   background: #fff532;
-  padding: 5px;
+  padding: 15px;
   display: block;
   width: fit-content;
   width: -webkit-fit-content;
@@ -1301,6 +1301,7 @@ html {
 .countdown__heading{
   font-size:0.75rem;
   line-height: 1.6;
+  margin-top: 0 !important;
 }
 
 }
@@ -1366,6 +1367,11 @@ a.btn-rl-nav:hover{
 
 a.btn-rl-nav{
   margin-top: -1%;
+  font-size: 0.95rem;
+}
+
+.urgency-market-msg .yellow-highlight {
+  padding: 10px;
 }
 
 }
@@ -1618,6 +1624,235 @@ ul.bonus-items span{
 
   #lsp-top h1{
     padding-top: 23%;
+  }
+
+}
+
+@media screen and (width:1024px){
+
+  .navbar__wrap img{
+    width: 110px;
+    margin-left: 2%;
+  }
+
+  .countdown__heading{
+    font-size:0.7rem;
+    margin-left: -14%;
+  }
+
+  .days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 0.7rem;
+}
+
+.countdown__wrapper{
+  margin-left: -3%;
+  margin-top: -0.5%;
+}
+
+a.btn-rl-nav{
+  background-color: #ff3247;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: -12%;
+}
+
+.hours__wrapper{
+  margin-left: -1%;
+}
+
+.minutes__wrapper{
+  margin-left: -1%;
+}
+
+.seconds__wrapper{
+  margin-left: -1%;
+}
+
+}
+
+p.timer-text{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ef384a;
+  margin-top: 1%;
+}
+
+
+p.days2{
+  font-size: 1.75rem !important;
+  font-weight: 600;
+}
+
+p.days__label2{
+  font-size: 1.1rem !important;
+  font-weight: 300;
+  margin-left: 10%;
+}
+
+p.hours2{
+  font-size: 1.75rem !important;
+  font-weight: 600;
+}
+
+p.hours__label2{
+  font-size: 1.1rem !important;
+  font-weight: 300;
+  margin-left: 10%;
+}
+
+p.minutes2{
+  font-size: 1.75rem !important;
+  font-weight: 600;
+}
+
+p.minutes__label2{
+  font-size: 1.1rem !important;
+  font-weight: 300;
+  margin-left: 10%;
+}
+
+p.seconds2{
+  font-size: 1.75rem !important;
+  font-weight: 600;
+}
+
+p.seconds__label2{
+  font-size: 1.1rem !important;
+  font-weight: 300;
+  margin-left: 10%;
+}
+
+p.spacer-text{
+  margin-top: 2%;
+}
+
+@media screen and (max-width:767px){
+
+  p.days2{
+    font-size: 1.5rem !important;
+  }
+
+  p.hours2{
+    font-size: 1.5rem !important;
+  }
+
+  p.minutes2{
+    font-size: 1.5rem !important;
+  }
+
+  p.seconds2{
+    font-size: 1.5rem !important;
+  }
+
+
+}
+
+@media screen and (width:1024px){
+  p.days2{
+    font-size: 2rem !important;
+  }
+
+  p.hours2{
+    font-size: 2rem !important;
+    margin-left: 40%;
+  }
+
+  p.minutes2{
+    font-size: 2rem !important;
+    margin-left: 80%;
+  }
+
+  p.seconds2{
+    font-size: 2rem !important;
+    margin-left: 100%;
+  }
+
+  p.timer-text{
+    font-size: 1.7rem;
+  }
+
+}
+
+@media screen and (width:320px){
+  p.days2{
+    font-size: 1.2rem !important;
+  }
+
+  p.hours2{
+    font-size: 1.2rem !important;
+    margin-left: 40%;
+  }
+
+  p.minutes2{
+    font-size: 1.2rem !important;
+    margin-left: 80%;
+  }
+
+  p.seconds2{
+    font-size: 1.2rem !important;
+    margin-left: 100%;
+  }
+
+  p.timer-text{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (width:2560px){
+  p.days2{
+    font-size: 2rem !important;
+  }
+
+  p.hours2{
+    font-size: 2rem !important;
+    margin-left: 40%;
+  }
+
+  p.minutes2{
+    font-size: 2rem !important;
+    margin-left: 80%;
+  }
+
+  p.seconds2{
+    font-size: 2rem !important;
+    margin-left: 100%;
+  }
+
+  p.timer-text{
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (width:1920px){
+  p.days2{
+    font-size: 2rem !important;
+  }
+
+  p.hours2{
+    font-size: 2rem !important;
+    margin-left: 40%;
+  }
+
+  p.minutes2{
+    font-size: 2rem !important;
+    margin-left: 80%;
+  }
+
+  p.seconds2{
+    font-size: 2rem !important;
+    margin-left: 100%;
+  }
+
+  p.timer-text{
+    font-size: 1.8rem;
   }
 
 }
