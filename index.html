@@ -1,3 +1,32 @@
+<?php
+require_once '../site/wp-load.php';
+require_once '../common/gtgmember/index.php';
+
+$geolocation = get_geolocation_information();
+$current_date = new DateTime("now", new DateTimeZone('America/New_York'));
+
+if (($current_date->format('Y-m-d H:i:s') < '2022-11-25 03:00:00' || $current_date->format('Y-m-d H:i:s') > '2022-11-30 03:00:00') && !isset($_GET['soldout'])) {
+    header("Location: https://www.howtogettheguy.com/texting/");
+    exit();
+}
+
+$cart_link = 'https://members.howtogettheguy.com/checkout/?rid=pi8x4I';
+$token = filter_input(INPUT_GET, 'token');
+
+if ($token) {
+    $cart_link = add_query_arg(['token' => $token, 'confirmpurchase' => 1, 'recommended' => 1], $cart_link);
+}
+
+$contact_id = filter_input(INPUT_GET, 'id');
+
+if (isset($contact_id)) {
+    $contact_information = get_contact_information($contact_id);
+}
+
+if (!empty($contact_information)) {
+    $cart_link .= '&id=' . $contact_id;
+}
+?>
 <!DOCTYPE html>
 <html lang="us">
 <head>
@@ -226,10 +255,30 @@
     </section>
     <section id="lsp-bottom">
         <div class="urgency-market-msg">
-            <span class="yellow-highlight">Limited-time launch bonus:</span>
+            <span class="yellow-highlight">BLACK FRIDAY BONUS:</span>
             <p>Your 4 "Mindset Reset" Audio Coaching Sessions</p>
-            <span class="countdown-timer" id="timer"></span>
-            <p>Feeling anxious, insecure, or lonely? <b>Tempted to send a text that you probably shouldn’t?</b></p>
+            <p class="timer-text">YOUR BLACK FRIDAY AUDIO COACHING BONUS EXPIRES IN:</p>
+            <div class="countdown">
+                <div class="countdown__wrapper">
+                    <div class="days__wrapper">
+                        <p class="days2">20</p>
+                        <p class="days__label2">Days</p>
+                    </div>
+                    <div class="hours__wrapper">
+                        <p class="hours2">15</p>
+                        <p class="hours__label2">Hrs</p>
+                    </div>
+                    <div class="minutes__wrapper">
+                        <p class="minutes2">20</p>
+                        <p class="minutes__label2">Min</p>
+                    </div>
+                    <div class="seconds__wrapper">
+                        <p class="seconds2">40</p>
+                        <p class="seconds__label2">Sec</p>
+                    </div>
+                </div>
+            </div>
+            <p class="spacer-text">Feeling anxious, insecure, or lonely? <b>Tempted to send a text that you probably shouldn’t?</b></p>
             <p>Claim your <i>Momentum Texts</i> now and I’ll give you <b>4 rapid audio coaching sessions</b> to help shift your perspective so the next move you make is from a place of confidence and power...</p>
             <ul class="bonus-items">
                 <li><p class="bonus-item-1"><span>#1:</span> “I Sent the Wrong Thing…”</p></li>
@@ -354,7 +403,6 @@
 <!-- <script src="../js/jquery.min.js"></script> -->
 <!-- <script src="../js/custom.js"></script>-->
 <script src="js/lsp-script.js" async></script>
-<script src="js/timer.js" async></script>
 <script>
     const countdown = document.querySelectorAll('.countdown');
     const retreatDate = new Date("November 22, 2022 3:00:00 EDT").getTime();
