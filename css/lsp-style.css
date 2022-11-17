@@ -1684,48 +1684,56 @@ p.timer-text{
 }
 
 
-p.days2{
+#lsp-bottom p.days{
   font-size: 1.75rem !important;
   font-weight: 600;
+  color: #000 !important;
 }
 
-p.days__label2{
+#lsp-bottom p.days__label{
   font-size: 1.1rem !important;
   font-weight: 300;
   margin-left: 10%;
+  color: #000 !important;
 }
 
-p.hours2{
+#lsp-bottom  p.hours{
   font-size: 1.75rem !important;
   font-weight: 600;
+  color: #000 !important;
 }
 
-p.hours__label2{
+#lsp-bottom  p.hours__label{
   font-size: 1.1rem !important;
   font-weight: 300;
   margin-left: 10%;
+  color: #000 !important;
 }
 
-p.minutes2{
+#lsp-bottom p.minutes{
   font-size: 1.75rem !important;
   font-weight: 600;
+  color: #000 !important;
 }
 
-p.minutes__label2{
+#lsp-bottom  p.minutes__label{
   font-size: 1.1rem !important;
   font-weight: 300;
   margin-left: 10%;
+  color: #000 !important;
 }
 
-p.seconds2{
+#lsp-bottom p.seconds{
   font-size: 1.75rem !important;
   font-weight: 600;
+  color: #000 !important;
 }
 
-p.seconds__label2{
+#lsp-bottom  p.seconds__label{
   font-size: 1.1rem !important;
   font-weight: 300;
   margin-left: 10%;
+  color: #000 !important;
 }
 
 p.spacer-text{
@@ -1734,19 +1742,19 @@ p.spacer-text{
 
 @media screen and (max-width:767px){
 
-  p.days2{
+  #lsp-bottom  p.days{
     font-size: 1.5rem !important;
   }
 
-  p.hours2{
+  #lsp-bottom  p.hours{
     font-size: 1.5rem !important;
   }
 
-  p.minutes2{
+  #lsp-bottom  p.minutes{
     font-size: 1.5rem !important;
   }
 
-  p.seconds2{
+  #lsp-bottom  p.seconds{
     font-size: 1.5rem !important;
   }
 
@@ -1754,21 +1762,21 @@ p.spacer-text{
 }
 
 @media screen and (width:1024px){
-  p.days2{
+  #lsp-bottom  p.days{
     font-size: 2rem !important;
   }
 
-  p.hours2{
+  #lsp-bottom  p.hours{
     font-size: 2rem !important;
     margin-left: 40%;
   }
 
-  p.minutes2{
+  #lsp-bottom  p.minutes{
     font-size: 2rem !important;
     margin-left: 80%;
   }
 
-  p.seconds2{
+  #lsp-bottom  p.seconds{
     font-size: 2rem !important;
     margin-left: 100%;
   }
@@ -1780,21 +1788,21 @@ p.spacer-text{
 }
 
 @media screen and (width:320px){
-  p.days2{
+  #lsp-bottom   p.days{
     font-size: 1.2rem !important;
   }
 
-  p.hours2{
+  #lsp-bottom  p.hours{
     font-size: 1.2rem !important;
     margin-left: 40%;
   }
 
-  p.minutes2{
+  #lsp-bottom  p.minutes{
     font-size: 1.2rem !important;
     margin-left: 80%;
   }
 
-  p.seconds2{
+  #lsp-bottom  p.seconds{
     font-size: 1.2rem !important;
     margin-left: 100%;
   }
@@ -1806,21 +1814,21 @@ p.spacer-text{
 }
 
 @media screen and (width:2560px){
-  p.days2{
+  #lsp-bottom  p.days{
     font-size: 2rem !important;
   }
 
-  p.hours2{
+  #lsp-bottom  p.hours{
     font-size: 2rem !important;
     margin-left: 40%;
   }
 
-  p.minutes2{
+  #lsp-bottom  p.minutes{
     font-size: 2rem !important;
     margin-left: 80%;
   }
 
-  p.seconds2{
+  #lsp-bottom  p.seconds{
     font-size: 2rem !important;
     margin-left: 100%;
   }
@@ -1832,21 +1840,21 @@ p.spacer-text{
 }
 
 @media screen and (width:1920px){
-  p.days2{
+  #lsp-bottom  p.days{
     font-size: 2rem !important;
   }
 
-  p.hours2{
+  #lsp-bottom  p.hours{
     font-size: 2rem !important;
     margin-left: 40%;
   }
 
-  p.minutes2{
+  #lsp-bottom p.minutes{
     font-size: 2rem !important;
     margin-left: 80%;
   }
 
-  p.seconds2{
+  #lsp-bottom  p.seconds{
     font-size: 2rem !important;
     margin-left: 100%;
   }
